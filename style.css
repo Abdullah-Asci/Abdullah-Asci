@@ -920,3 +920,88 @@ img {
         transform: translateY(0);
     }
 }
+
+
+
+
+.project-img {
+    display: none; /* Cacher complètement l'image */
+}
+
+.projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Réduire la largeur */
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pour garder le bas du bloc aligné */
+}
+
+.project-info {
+    flex-grow: 1; /* Permettre au contenu de prendre tout l'espace */
+}
+
+
+
+
+
+
+.stage-img {
+    display: none;
+}
+
+.stage-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+
+.stage-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.stage-info {
+    flex-grow: 1; 
+}
+
+
+
+.stage-links,
+.project-links {
+    display: flex;
+    gap: 10px;
+    align-items: stretch; /* Étire tous les éléments à la même hauteur */
+}
+
+.stage-links .btn,
+.project-links .btn {
+    display: flex;
+    align-items: center; /* Centre le texte verticalement */
+    height: 100%; /* Prend toute la hauteur du conteneur parent */
+    min-height: 40px; /* Hauteur minimale fixe */
+}
+
+
+.veille-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.veille-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.veille-text {
+    flex: 1;
+}
+
+.veille .btn {
+    margin-left: 45%;
+}

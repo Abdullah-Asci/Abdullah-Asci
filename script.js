@@ -178,3 +178,46 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Existing code remains the same...
+
+    // Filtrage des stages
+    const stageFilterBtns = document.querySelectorAll('.filter-btn');
+    const stageCards = document.querySelectorAll('.stage-card');
+    
+    stageFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Retirer la classe active de tous les boutons
+            stageFilterBtns.forEach(b => b.classList.remove('active'));
+            // Ajouter la classe active au bouton cliqué
+            btn.classList.add('active');
+            
+            const filter = btn.getAttribute('data-filter');
+            
+            stageCards.forEach(card => {
+                if(filter === 'all') {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                    }, 300);
+                } else if(card.getAttribute('data-category') === filter) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                    }, 300);
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+
+            // Réinitialiser AOS pour les nouvelles cartes visibles
+            AOS.refresh();
+        });
+    });
+
+    // Reste du code existant...
+});
