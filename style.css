@@ -1005,3 +1005,11 @@ img {
 .veille .btn {
     margin-left: 45%;
 }
+
+.veille-titre {
+    font-size: 25px;
+}
+
+.description-intro {
+    margin-bottom: 15px;
+}
