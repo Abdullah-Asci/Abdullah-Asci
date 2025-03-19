@@ -747,24 +747,17 @@ img {
     margin-bottom: 30px;
 }
 
-.footer-logo h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.footer-logo span {
-    color: var(--secondary);
-}
-
-.footer-logo p {
-    color: #a0a0a0;
-}
-
 .footer-links ul {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+    flex-direction: row;
+    gap: 20px;  /* Augmenter l'espacement si nécessaire */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 370px;
+  }
 
 .footer-links a {
     color: #a0a0a0;
