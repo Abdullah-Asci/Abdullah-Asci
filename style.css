@@ -348,6 +348,10 @@ img {
     color: var(--secondary);
 }
 
+.info-value {
+    margin-left: -80px;
+}
+
 /* Compétences section */
 .competences {
     background-color: #f8f9fa;
