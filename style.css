@@ -921,9 +921,7 @@ img {
 
 
 
-.project-img {
-    display: none; /* Cacher complètement l'image */
-}
+
 
 .projects-container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Réduire la largeur */
@@ -944,10 +942,6 @@ img {
 
 
 
-
-.stage-img {
-    display: none;
-}
 
 .stage-container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
