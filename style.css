@@ -639,16 +639,15 @@ img {
 }
 
 .contact-info {
-        grid-column: 2;
-        background-color: white;
-        border-radius: 10px;
-        padding: 30px;
-        box-shadow: var(--shadow);
-        margin: 0 auto;
-        max-width: 600px;
+    grid-column: 2;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    margin: 0 auto;
+    max-width: 600px;
 }
-
-.contact-info h3, 
+ 
 .contact-form h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
@@ -1006,3 +1005,77 @@ img {
 .description-intro {
     margin-bottom: 15px;
 }
+
+
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    width: 2px;
+    background-color: #333;
+    transform: translateX(1px);
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .timeline-point {
+    width: 16px;
+    height: 16px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    right: calc(50% - 8px);
+    z-index: 2;
+  }
+  
+  .timeline-content {
+    width: 45%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .timeline-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .timeline-content p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .left {
+    margin-right: 50px;
+    text-align: right;
+  }
+  
+  .right {
+    margin-left: 50px;
+    text-align: left;
+  }
+  
+  .timeline-item:nth-child(even) {
+    justify-content: flex-start;
+  }
