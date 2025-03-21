@@ -754,7 +754,7 @@ img {
 .footer-links ul {
     display: flex;
     flex-direction: row;
-    gap: 20px;  /* Augmenter l'espacement si nécessaire */
+    gap: 35px;  /* Augmenter l'espacement si nécessaire */
     align-items: center;
     list-style: none;
     padding: 0;
