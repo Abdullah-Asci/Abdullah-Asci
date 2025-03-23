@@ -92,9 +92,33 @@ img {
     border: none;
 }
 
+.btn2 {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 140px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+}
+
 .btn-primary {
     background-color: var(--secondary);
     color: white;
+}
+
+.btn-primary2 {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.btn-primary2:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
 }
 
 .btn-primary:hover {
@@ -1085,3 +1109,112 @@ img {
   .timeline-item:nth-child(even) {
     justify-content: flex-start;
   }
+
+
+
+
+
+
+
+
+
+.experiences-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.experience-item {
+    display: flex;
+}
+
+.experience-content {
+    flex: 1;
+    font-size: 30px;
+}
+
+.experience-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.experience-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.experience-stage {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.experience-title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 10px 0;
+    margin-top: 27px;
+}
+
+.experience-duration {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: 28px;
+}
+
+.experience-location {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.details-button {
+    display: block;
+    width: 100%;
+    background-color: #55814f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.details-button:hover {
+    background-color: #446643;
+}
+
+@media (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .experience-title, .experience-duration {
+        font-size: 2.5rem;
+    }
+}
