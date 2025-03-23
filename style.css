@@ -994,6 +994,12 @@ img {
     flex: 1;
 }
 
+.veille-news .text2 {
+    flex: 1;
+    margin: 30px;
+    margin-left: 0px;
+}
+
 .veille .btn {
     margin-left: 45%;
 }
