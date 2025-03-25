@@ -658,10 +658,11 @@ img {
 
 .contact-container {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(auto, 800px) minmax(0, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
 }
 
+.contact-form
 .contact-info {
     grid-column: 2;
     background-color: white;
